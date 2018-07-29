@@ -7,7 +7,7 @@ import Scroll from './Scroll';
 import ErrorBoundary from './ErrorBoundary';
 
 class App extends React.Component{
-  componentDidMount(){c
+  componentDidMount(){
     console.log('mounted');
     this.props.onRequestRobots();
   }
