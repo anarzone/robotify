@@ -1,6 +1,5 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import robots from '../robots';
 import { setFilterText } from '../actions/filters';
 
 const SearchBox = (props) =>(

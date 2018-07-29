@@ -1,12 +1,11 @@
 import React from 'react';
 import Card from './Card';
 import { connect } from 'react-redux';
-import { setFilterText } from '../actions/filters';
 import filteredRobots from '../selectors/filteredRobots';
 
 class CardList extends React.Component{
   render(){
-    const {robots, filterText, dispatch} = this.props;
+    const {robots} = this.props;
     return(
       <div>
         <div>
@@ -20,8 +19,7 @@ class CardList extends React.Component{
 }
 
 const mapStateToProps = state =>({
-  robots: filteredRobots(state.fetchRobots.robots, state.fetchFilters),
-  filterText: state.fetchFilters.filterText
+  robots: filteredRobots(state.fetchRobots.robots, state.fetchFilters)
 })
 
 export default connect(mapStateToProps)(CardList);
