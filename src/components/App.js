@@ -17,7 +17,7 @@ class App extends React.Component{
     return(
       <div>
         <div className="tc">
-          <h1>RoboFriends</h1>
+          <h1>Robotify</h1>
           <SearchBox/>
           <Scroll>
             <ErrorBoundary>
